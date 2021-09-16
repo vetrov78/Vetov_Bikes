@@ -84,6 +84,7 @@ a {
 }
 
 .page-header__navigation-list {
+  border: 1px solid indianred;
   position: relative;
   list-style-type: none;
   display: flex;
@@ -94,11 +95,10 @@ a {
 }
 @media (max-width: 1023px) {
   .page-header__navigation-list {
-    border: 1px solid yellowgreen;
     padding: 0;
     position: absolute;
     z-index: 1;
-    top: 50px;
+    top: 0;
     right: 0;
     width: 320px;
     flex-direction: column;
@@ -109,6 +109,11 @@ a {
   }
   .page-header__navigation-list li:last-child {
     margin-bottom: 138px;
+  }
+}
+@media (max-width: 767px) {
+  .page-header__navigation-list {
+    width: 100%;
   }
 }
 .page-header__navigation-list::after {
@@ -124,15 +129,22 @@ a {
   }
 }
 
+@media (max-width: 1023px) {
+  .page-header__navigation--nojs .page-header__navigation-list {
+    bottom: 50%;
+  }
+}
+
 .page-header__navigation-item {
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.7);
 }
 @media (max-width: 1023px) {
   .page-header__navigation-item {
-    border: 1px solid indigo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
     padding: 17px 35px 17px 16px;
     box-sizing: border-box;
@@ -140,6 +152,15 @@ a {
     background-color: #F6F6F6;
     font-size: 20px;
     line-height: 140%;
+  }
+}
+
+.page-header__navigation-item a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 1023px) {
+  .page-header__navigation-item a {
     color: #48494D;
   }
 }
@@ -151,6 +172,7 @@ a {
 }
 
 .page-header__navigation-toggle {
+  z-index: 2;
   cursor: pointer;
   position: absolute;
   right: 0;
@@ -162,6 +184,19 @@ a {
   }
 }
 
+@media (max-width: 1023px) {
+  .page-header__navigation--closed .page-header__navigation-item {
+    display: none;
+  }
+}
+.page-header__navigation--opened .page-header__navigation-open-icon {
+  display: none;
+}
+
+.page-header__navigation--closed .page-header__navigation-close-icon {
+  display: none;
+}
+
 .page-header__promo {
   position: absolute;
   left: 280px;
@@ -171,6 +206,7 @@ a {
 }
 @media (max-width: 1023px) {
   .page-header__promo {
+    z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
