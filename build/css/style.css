@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
+}
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.page__body {
+  min-height: 100%;
+  min-width: 320px;
+  margin: auto;
+  background-color: #FFF;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.page-header {
+  height: 825px;
+  background-color: #000000;
+  background-image: url("../img/Header_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+@media (max-width: 1023px) {
+  .page-header {
+    height: 340px;
+  }
+}
+
+.page-header__navigation-list {
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 21px 0 9px;
+  max-width: 873px;
+}
+@media (max-width: 1023px) {
+  .page-header__navigation-list {
+    border: 1px solid yellowgreen;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: 0;
+    width: 320px;
+    flex-direction: column;
+    background-color: #FFF;
+  }
+  .page-header__navigation-list li:first-child {
+    margin-top: 117px;
+  }
+  .page-header__navigation-list li:last-child {
+    margin-bottom: 138px;
+  }
+}
+.page-header__navigation-list::after {
+  position: absolute;
+  content: "";
+  bottom: 1px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 1023px) {
+  .page-header__navigation-list::after {
+    display: none;
+  }
+}
+
+.page-header__navigation-item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 1023px) {
+  .page-header__navigation-item {
+    border: 1px solid indigo;
+    margin-top: 30px;
+    padding: 17px 35px 17px 16px;
+    box-sizing: border-box;
+    height: 60px;
+    background-color: #F6F6F6;
+    font-size: 20px;
+    line-height: 140%;
+    color: #48494D;
+  }
+}
+
+@media (min-width: 1023px) {
+  .page-header__navigation-item .page-header__navigation-item-arrow {
+    display: none;
+  }
+}
+
+.page-header__navigation-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (min-width: 1023px) {
+  .page-header__navigation-toggle {
+    display: none;
+  }
+}
+
+.page-header__promo {
+  position: absolute;
+  left: 280px;
+  top: 318px;
+  width: 393px;
+  color: #FFF;
+}
+@media (max-width: 1023px) {
+  .page-header__promo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 21px;
+  }
+}
+
+.page-header__promo-logo-container {
+  width: 68px;
+  height: 21px;
+  background-image: url("../img/logo.svg");
+}
+
+.page-header__promo h2 {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+}
+@media (max-width: 1023px) {
+  .page-header__promo h2 {
+    margin-top: 89px;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+}
+
+.page-header__promo p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.8;
+  letter-spacing: -0.005em;
+}
+@media (max-width: 1023px) {
+  .page-header__promo p {
+    width: 435px;
+    margin: 20px auto 0;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
