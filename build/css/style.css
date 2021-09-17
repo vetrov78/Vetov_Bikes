@@ -250,7 +250,7 @@ a {
 .page-header__promo {
   position: absolute;
   top: 369px;
-  left: 280px;
+  left: 20%;
   width: 393px;
   margin-top: 31px;
   color: #FFF;
@@ -300,6 +300,49 @@ a {
     line-height: 32px;
     text-align: center;
   }
+}
+
+.page-header__form {
+  border: 1px solid yellow;
+  position: absolute;
+  top: 269px;
+  left: 59.5%;
+  width: 327px;
+  text-align: center;
+}
+
+.page-header__form h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: #FFF;
+}
+
+.page-header__input {
+  border: 1px solid #C9CCD4;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 29px 10px;
+  box-sizing: border-box;
+}
+.page-header__input::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(28, 28, 28, 0.5);
+}
+
+.page-header__submit-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 29px 10px;
+  box-sizing: border-box;
+  background-color: #0AD9C6;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
 }
 
 .page-main {

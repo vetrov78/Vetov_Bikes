@@ -60,6 +60,12 @@
         <h2>Мы продаем велосипеды</h2>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </article>
+      <form method="POST" action="https://echo.htmlacademy.ru" class="page-header__form">
+        <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
+        <input class="page-header__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
+        <input class="page-header__input" type="text" data-accept="\d" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required>
+        <button class="page-header__submit-button" type="submit" aria-label="Кнопка отправки контактов">Подобрать велосипед мечты</button>
+      </form>
     </div>
   </header>
   <main class="page-main">
