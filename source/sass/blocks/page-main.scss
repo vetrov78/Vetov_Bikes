@@ -1,5 +1,8 @@
 .page-main {
+  border: 1px solid indianred;
+
   background-color: $navigation-text;
+  margin-top: 150px;
 
   @media (max-width: $tablet-width) {
     margin-top: 413px;
