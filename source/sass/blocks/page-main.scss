@@ -12,3 +12,54 @@
     margin-top: 431px;
   }
 }
+
+
+.page-main__facts h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $footer-bold-text;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+}
+
+.page-main__facts-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+  justify-content: center;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+
+  @media(max-width:$tablet-width){
+    gap: 30px;
+    width: 560px;
+    margin: 30px auto 0;
+  }
+
+  @media(max-width:$mobile-width) {
+    width: 270px;
+  }
+}
+
+.page-main__facts-item {
+  border: 1px dashed dimgray;
+  width: 263px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 34px;
+  padding-bottom: 10px;
+
+  @media(max-width:$mobile-width){
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+}
