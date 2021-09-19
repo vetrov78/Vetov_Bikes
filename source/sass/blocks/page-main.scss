@@ -2,17 +2,19 @@
   border: 1px solid indianred;
 
   background-color: $navigation-text;
-  margin-top: 150px;
+}
+
+.page-main__facts {
+  padding: 150px 0 131px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 413px;
+    padding: 413px 0 70px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 431px;
+    padding: 431px 0 70px;
   }
 }
-
 
 .page-main__facts h2 {
   text-align: center;
@@ -62,4 +64,77 @@
     font-size: 18px;
     padding-bottom: 5px;
   }
+}
+
+.page-main__bike-types {
+  border: 1px solid teal;
+
+  background-color: $gray-background;
+}
+
+.page-main__bike-types h2 {
+  text-align: center;
+  margin-top: 149px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $footer-bold-text;
+}
+
+.page-main__types-list {
+  border: 1px solid rebeccapurple;
+
+  list-style: none;
+  display: flex;
+  gap: 3.5%;
+  justify-content: center;
+  margin: 61px 3.5% 0;
+  padding: 0;
+}
+
+.page-main__types-item {
+  border: 1px dashed khaki;
+
+  &:nth-child(2n) {
+    margin-top: 39px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: 0;
+    }
+  }
+}
+
+.page-main__type-image-container {
+  border-radius: 10px;
+  width: 342px;
+
+  &--1 {
+    background: center / cover no-repeat url('../img/Bike_1.jpg');
+    height: 503px;
+  }
+  &--2 {
+    background: center / cover no-repeat url('../img/Bike_2.jpg');
+    height: 566px;
+  }
+  &--3 {
+    background: center / cover no-repeat url('../img/Bike_3.jpg');
+    height: 513px;
+  }
+}
+
+// .page-main__types-item img {
+//   background-color: $input-border;
+//   width: auto;
+
+//   @media (max-width: $tablet-width) {
+//     width: 270px;
+//     height: 300px;
+//   }
+// }
+
+.page-main__types-item h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
 }
