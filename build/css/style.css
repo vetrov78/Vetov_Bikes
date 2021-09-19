@@ -361,21 +361,20 @@ a {
 }
 
 .page-main {
-  border: 1px solid indianred;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 .page-main__facts {
-  padding: 150px 0 131px;
+  padding: 150px 0 0;
 }
 @media (max-width: 1023px) {
   .page-main__facts {
-    padding: 413px 0 70px;
+    padding: 413px 0 0;
   }
 }
 @media (max-width: 767px) {
   .page-main__facts {
-    padding: 431px 0 70px;
+    padding: 431px 0 0;
   }
 }
 
@@ -433,34 +432,48 @@ a {
 }
 
 .page-main__bike-types {
-  border: 1px solid teal;
   background-color: #F6F7F9;
+  margin-top: 131px;
+  padding: 149px 0 94px;
+}
+@media (max-width: 1023px) {
+  .page-main__bike-types {
+    margin-top: 70px;
+    padding: 50px 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .page-main__bike-types {
+    padding-bottom: 0;
+  }
 }
 
 .page-main__bike-types h2 {
   text-align: center;
   margin: 0;
-  margin-top: 149px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   color: #1F1F1F;
 }
+@media (max-width: 1023px) {
+  .page-main__bike-types h2 {
+    font-size: 24px;
+    line-height: 41px;
+  }
+}
 
 .page-main__types-list {
-  border: 1px solid rebeccapurple;
   list-style: none;
   display: flex;
   gap: 3.5%;
   justify-content: center;
   margin: 51px 3.5% 0;
-  padding: 0 0 94px;
 }
 @media (max-width: 1023px) {
   .page-main__types-list {
     flex-wrap: wrap;
     margin-top: 30px;
-    padding-bottom: 20px;
   }
 }
 
@@ -502,6 +515,69 @@ a {
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;
+}
+
+.page-main__video {
+  position: relative;
+  background-color: #131314;
+  height: 706px;
+  padding: 120px 0 0;
+  box-sizing: border-box;
+}
+@media (max-width: 1023px) {
+  .page-main__video {
+    height: 417px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .page-main__video {
+    height: 384px;
+    padding-top: 84px;
+  }
+}
+
+.page-main__video h2 {
+  text-align: center;
+  margin: 0;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+}
+@media (max-width: 1023px) {
+  .page-main__video h2 {
+    font-size: 24px;
+  }
+}
+
+.page-main__video p {
+  width: 340px;
+  text-align: center;
+  margin: 20px auto 0;
+  color: #FFF;
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+}
+@media (max-width: 1023px) {
+  .page-main__video p {
+    width: 429px;
+  }
+}
+@media (max-width: 767px) {
+  .page-main__video p {
+    width: auto;
+    margin: 20px 5% 0;
+  }
+}
+
+.page-main__video img {
+  position: absolute;
+  top: 282px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .page-footer {
