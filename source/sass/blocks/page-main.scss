@@ -74,6 +74,7 @@
 
 .page-main__bike-types h2 {
   text-align: center;
+  margin: 0;
   margin-top: 149px;
   font-weight: 600;
   font-size: 30px;
@@ -88,20 +89,19 @@
   display: flex;
   gap: 3.5%;
   justify-content: center;
-  margin: 61px 3.5% 0;
-  padding: 0;
+  margin: 51px 3.5% 0;
+  padding: 0 0 94px;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
 }
 
 .page-main__types-item {
   border: 1px dashed khaki;
-
-  &:nth-child(2n) {
-    margin-top: 39px;
-
-    @media (max-width: $tablet-width) {
-      margin-top: 0;
-    }
-  }
+  padding-bottom: 50px;
 }
 
 .page-main__type-image-container {
@@ -109,16 +109,24 @@
   width: 342px;
 
   &--1 {
+    margin-top: 10px;
     background: center / cover no-repeat url('../img/Bike_1.jpg');
     height: 503px;
   }
   &--2 {
     background: center / cover no-repeat url('../img/Bike_2.jpg');
     height: 566px;
+    margin-top: 39px;
   }
   &--3 {
     background: center / cover no-repeat url('../img/Bike_3.jpg');
     height: 513px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+    margin-top: 0;
   }
 }
 
@@ -133,8 +141,11 @@
 // }
 
 .page-main__types-item h3 {
+  margin: 0;
+  margin-top: 20px;
   text-align: center;
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;
+
 }
