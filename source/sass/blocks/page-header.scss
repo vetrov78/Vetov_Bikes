@@ -162,7 +162,7 @@
 .page-header__promo-logo {
   position: absolute;
   top: 318px;
-  left: 280px;
+  left: 19.5%;
   width: 68px;
   height: 21px;
   // fill: $main-green;
@@ -177,7 +177,7 @@
 .page-header__promo {
   position: absolute;
   top: 369px;
-  left: 20%;
+  left: 19.5%;
   width: 393px;
   color: $main-white;
 
@@ -199,7 +199,7 @@
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
-  letter-spacing: -0.005em;
+  letter-spacing: 0.035em;
 
   @media (max-width:$tablet-width) {
     font-size: 30px;

@@ -240,7 +240,7 @@ a {
 .page-header__promo-logo {
   position: absolute;
   top: 318px;
-  left: 280px;
+  left: 19.5%;
   width: 68px;
   height: 21px;
 }
@@ -255,7 +255,7 @@ a {
 .page-header__promo {
   position: absolute;
   top: 369px;
-  left: 20%;
+  left: 19.5%;
   width: 393px;
   color: #FFF;
 }
@@ -279,7 +279,7 @@ a {
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
-  letter-spacing: -0.005em;
+  letter-spacing: 0.035em;
 }
 @media (max-width: 1023px) {
   .page-header__promo h2 {
@@ -434,12 +434,12 @@ a {
 .page-main__facts-number {
   width: 26px;
   height: 22px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .page-main__facts-item p {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 22px;
   line-height: 34px;
 }
@@ -451,7 +451,7 @@ a {
 
 .page-main__bike-types {
   background-color: #F6F7F9;
-  margin-top: 131px;
+  margin-top: 150px;
   padding: 149px 0 94px;
   overflow: hidden;
 }
@@ -781,7 +781,6 @@ a {
 }
 
 .page-footer__map {
-  border: 1px solid royalblue;
   margin: 42px 35px 0;
   height: 530px;
 }
@@ -802,13 +801,17 @@ a {
   height: 100%;
 }
 
+.page-footer__contacts {
+  margin: 40px 0 55px;
+}
 .page-footer__contacts-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 558px;
-  margin: 21px auto 55px;
+  width: 550px;
+  margin: auto;
   padding: 0;
+  padding-right: 18px;
 }
 @media (max-width: 767px) {
   .page-footer__contacts-list {

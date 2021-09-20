@@ -54,8 +54,6 @@
 }
 
 .page-footer__map {
-  border: 1px solid royalblue;
-
   margin: 42px 35px 0;
   height: 530px;
 
@@ -76,7 +74,7 @@
 }
 
 .page-footer__contacts {
-
+  margin: 40px 0 55px;
 
   @media (max-width: $tablet-width) {
 
@@ -90,9 +88,10 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 558px;
-  margin: 21px auto 55px;
+  width: 550px;
+  margin: auto;
   padding: 0;
+  padding-right: 18px;
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
