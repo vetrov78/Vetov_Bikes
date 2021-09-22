@@ -376,6 +376,13 @@ a {
 .page-header__input::placeholder {
   color: rgba(28, 28, 28, 0.5);
 }
+.page-header__input:hover, .page-header__input :focus {
+  border-color: #FF0000;
+}
+.page-header__input:focus-visible {
+  box-shadow: none;
+  outline-color: #0AD9C6;
+}
 
 .page-header__submit-button {
   width: 100%;
@@ -765,6 +772,8 @@ a {
   transform: translate(-50%);
   width: 65px;
   height: 65px;
+  cursor: pointer;
+  fill: #0AD9C6;
 }
 @media (max-width: 1023px) {
   .page-main__video-play-button {
@@ -779,6 +788,9 @@ a {
     width: 65px;
     height: 65px;
   }
+}
+.page-main__video-play-button:hover {
+  fill-opacity: 0.5;
 }
 
 .page-footer {

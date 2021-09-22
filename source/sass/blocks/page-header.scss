@@ -294,6 +294,14 @@
     color: $placeholder-text;
   }
 
+  &:hover, :focus {
+    border-color: $main-red;
+  }
+
+  &:focus-visible {
+    box-shadow: none;
+    outline-color: $main-green;
+  }
 }
 
 .page-header__submit-button {

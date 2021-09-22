@@ -339,6 +339,8 @@
   transform: translate(-50%);
   width: 65px;
   height: 65px;
+  cursor: pointer;
+  fill: $main-green;
 
   @media (max-width: $tablet-width) {
     top: 96px;
@@ -350,5 +352,9 @@
     top: 48px;
     width: 65px;
     height: 65px;
+  }
+
+  &:hover {
+    fill-opacity: .5;
   }
 }
