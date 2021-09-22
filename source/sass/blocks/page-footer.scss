@@ -1,6 +1,4 @@
 .page-footer {
-  border: 1px solid forestgreen;
-
   text-align: center;
 }
 
@@ -14,42 +12,44 @@
   @media (max-width: $mobile-width) {
     margin-top: 119px;
   }
+}
 
-  & h2 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 30px;
+.page-footer__promo h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $footer-bold-text;
+
+  @media(max-width:$tablet-width){
+    font-size: 24px;
     line-height: 30px;
-    color: $footer-bold-text;
+    letter-spacing: 0.02em;
+  };
 
-    @media(max-width:$tablet-width){
-      font-size: 24px;
-      line-height: 30px;
-    };
-
-    @media (max-width: $mobile-width) {
-      font-size: 18px;
-      line-height: 30px;
-    }
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
+}
 
-  & p {
-    width: 555px;
-    margin: 0 auto;
-    margin-top: 30px;
-    font-size: 17px;
-    line-height: 31px;
-    color: $footer-ordinary-text;
+.page-footer__promo p {
+  width: 555px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 17px;
+  line-height: 31px;
+  color: $footer-ordinary-text;
 
-    @media(max-width:$tablet-width){
-      margin-top: 20px;
-      width: 700px;
-    };
+  @media(max-width:$tablet-width){
+    margin-top: 20px;
+    width: auto;
+    letter-spacing: 0.02em;
+  };
 
-    @media (max-width: $mobile-width) {
-      margin: 20px 16px 0;
-      width: auto;
-    }
+  @media (max-width: $mobile-width) {
+    margin: 20px 16px 0;
+    width: auto;
   }
 }
 
@@ -63,20 +63,21 @@
   };
 
   @media(max-width:$mobile-width){
-    margin: 25px 0 0;
+    margin: 20px 0 0;
     height: 250px;
   };
+}
 
-  & img {
-    object-fit: cover;
-    height: 100%;
-  }
+.page-footer__map  img {
+  object-fit: cover;
+  height: 100%;
 }
 
 .page-footer__contacts {
   margin: 40px 0 55px;
 
   @media (max-width: $tablet-width) {
+    margin-top: 20px;
 
   }
   @media (max-width: $mobile-width) {
@@ -90,8 +91,7 @@
   justify-content: space-between;
   width: 550px;
   margin: auto;
-  padding: 0;
-  padding-right: 18px;
+  padding: 0 10px 0 0;
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
@@ -99,22 +99,23 @@
     align-items: center;
     margin: 31px auto 51px;
     width: auto;
+    padding: 0;
   }
 }
 
 .page-footer__contacts-item {
   display: flex;
   align-items: center;
+}
 
-  & a {
-    margin: 0;
-    margin-left: 15px;
-    font-size: 16px;
-    line-height: 22px;
-    color: $contacts-text;
+.page-footer__contacts-item a {
+  margin: 0;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $contacts-text;
 
-    &:hover {
+  &:hover {
 
-    }
   }
 }

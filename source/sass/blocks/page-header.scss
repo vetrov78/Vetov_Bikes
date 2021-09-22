@@ -172,6 +172,10 @@
     top: 25px;
     left: 21px;
   }
+
+  @media (max-width: $mobile-width) {
+    left: 17px;
+  }
 }
 
 .page-header__promo {
@@ -189,7 +193,8 @@
     margin: 0;
   }
 
-  @media(max-width:$mobile-width){
+  @media(max-width:$mobile-width) {
+    top: 120px;
     width: 95%;
   }
 }
@@ -252,9 +257,16 @@
   font-size: 17px;
   line-height: 28px;
   color: $main-white;
+  letter-spacing: 0.01em;
 
   @media (max-width: $tablet-width) {
+    padding-bottom: 10px;
     color: $main-black;
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -265,10 +277,19 @@
   margin-top: 23px;
   padding: 16px 29px 13px;
   box-sizing: border-box;
+  font-size: 15px;
+  line-height: 24px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 20px;
+    padding: 11px 21px 11px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 26px;
+  }
 
   &::placeholder {
-    font-size: 15px;
-    line-height: 24px;
     color: $placeholder-text;
   }
 
@@ -285,4 +306,12 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
+
+  @media (max-width: $tablet-width) {
+    padding: 15px 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 15px 28px;
+  }
 }
