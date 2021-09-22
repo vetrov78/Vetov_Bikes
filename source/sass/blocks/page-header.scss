@@ -77,12 +77,8 @@
   line-height: 32px;
 
   @media (max-width:$tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     margin-top: 30px;
-    padding: 17px 35px 17px 16px;
-    box-sizing: border-box;
     height: 60px;
     background-color: $js-navigation-background;
     font-size: 20px;
@@ -95,6 +91,11 @@
   color: $navigation-text;
 
   @media(max-width:$tablet-width){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 35px 17px 16px;
+    box-sizing: border-box;
     color: $js-navigation-text;
   }
 }
