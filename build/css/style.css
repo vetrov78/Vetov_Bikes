@@ -865,7 +865,7 @@ a {
 }
 
 .page-footer__contacts {
-  margin: 40px 0 55px;
+  margin: 38px 0 55px;
 }
 @media (max-width: 1023px) {
   .page-footer__contacts {
@@ -897,8 +897,11 @@ a {
 }
 
 .page-footer__contacts-item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
   margin: 0;
-  margin-left: 15px;
   font-size: 16px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.5);
