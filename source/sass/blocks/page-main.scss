@@ -228,16 +228,13 @@
 
   &--1 {
     margin-top: 10px;
-    background: center / cover no-repeat url('../img/Bike_1.jpg');
     height: 503px;
   }
   &--2 {
-    background: center / cover no-repeat url('../img/Bike_2.jpg');
     height: 566px;
     margin-top: 39px;
   }
   &--3 {
-    background: center / cover no-repeat url('../img/Bike_3.jpg');
     height: 513px;
   }
 
@@ -246,6 +243,10 @@
     height: 300px;
     margin-top: 0;
   }
+}
+
+.page-main__type-image-container img {
+  height: 100%;
 }
 
 .page-main__types-item h3 {

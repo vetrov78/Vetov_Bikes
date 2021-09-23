@@ -16,9 +16,10 @@ headerToggle.addEventListener('click', function () {
   }
 });
 
+// Закрытие мобильного меню после выбора любого пункта
 var menuItem = document.querySelector('.page-header__navigation-item');
-
 menuItem.addEventListener('click', function () {
   pageHeaderNav.classList.add('page-header__navigation--closed');
   pageHeaderNav.classList.remove('page-header__navigation--opened');
 });
+
