@@ -239,6 +239,12 @@ a {
 @media (max-width: 767px) {
   .page-header__container {
     height: 390px;
+    background: center/cover url("../img/header-background-mobile@1x.jpg");
+  }
+}
+@media (max-width: 767px) and (min-resolution: 192dpi) {
+  .page-header__container {
+    background: center/cover url("../img/header-background-mobile@2x.jpg");
   }
 }
 
