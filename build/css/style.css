@@ -65,7 +65,7 @@ a {
   min-height: 100%;
   min-width: 320px;
   margin: auto;
-  background-color: #FFF;
+  background-color: #ffffff;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
@@ -124,7 +124,7 @@ a {
     margin: 0;
     padding: 0;
     flex-direction: column;
-    background-color: #FFF;
+    background-color: #ffffff;
   }
   .page-header__navigation-list li:first-child {
     margin-top: 117px;
@@ -155,7 +155,7 @@ a {
   .page-header__navigation-item {
     margin-top: 30px;
     height: 60px;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     font-size: 20px;
     line-height: 140%;
   }
@@ -172,7 +172,7 @@ a {
     align-items: center;
     padding: 17px 35px 17px 16px;
     box-sizing: border-box;
-    color: #48494D;
+    color: #48494d;
   }
 }
 
@@ -217,8 +217,7 @@ a {
   position: relative;
   width: 100%;
   height: 825px;
-  background-color: #48494D;
-  background: center/cover url("../img/header-background-desktop@1x.jpg");
+  background: #48494d center/cover url("../img/header-background-desktop@1x.jpg");
 }
 @media (min-resolution: 192dpi) {
   .page-header__container {
@@ -281,7 +280,7 @@ a {
   top: 369px;
   left: 19.5%;
   width: 393px;
-  color: #FFF;
+  color: #ffffff;
 }
 @media (max-width: 1023px) {
   .page-header__promo {
@@ -349,12 +348,13 @@ a {
     min-width: 288px;
   }
 }
+
 .page-header__form h2 {
   margin: 0;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
-  color: #FFF;
+  color: #ffffff;
   letter-spacing: 0.01em;
 }
 @media (max-width: 1023px) {
@@ -370,8 +370,8 @@ a {
   }
 }
 
-.page-header__input {
-  border: 1px solid #C9CCD4;
+.page-header__form input {
+  border: 1px solid #c9ccd4;
   border-radius: 6px;
   width: 100%;
   margin-top: 23px;
@@ -381,33 +381,34 @@ a {
   line-height: 24px;
 }
 @media (max-width: 1023px) {
-  .page-header__input {
+  .page-header__form input {
     margin-top: 20px;
     padding: 11px 21px 11px;
   }
 }
 @media (max-width: 767px) {
-  .page-header__input {
+  .page-header__form input {
     padding-left: 26px;
   }
 }
-.page-header__input::placeholder {
+.page-header__form input::placeholder {
   color: rgba(28, 28, 28, 0.5);
 }
-.page-header__input:hover, .page-header__input :focus {
-  border-color: #FF0000;
+.page-header__form input:hover,
+.page-header__form input :focus {
+  border-color: #ff0000;
 }
-.page-header__input:focus-visible {
+.page-header__form input:focus-visible {
   box-shadow: none;
-  outline-color: #0AD9C6;
+  outline-color: #0ad9c6;
 }
 
-.page-header__submit-button {
+.page-header__form button {
   width: 100%;
   margin-top: 20px;
   padding: 14px 29px 10px;
   box-sizing: border-box;
-  background-color: #0AD9C6;
+  background-color: #0ad9c6;
   border-radius: 6px;
   border-style: none;
   font-weight: 600;
@@ -415,12 +416,12 @@ a {
   line-height: 21px;
 }
 @media (max-width: 1023px) {
-  .page-header__submit-button {
+  .page-header__form button {
     padding: 15px 50px;
   }
 }
 @media (max-width: 767px) {
-  .page-header__submit-button {
+  .page-header__form button {
     padding: 15px 28px;
   }
 }
@@ -449,7 +450,7 @@ a {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 @media (max-width: 1023px) {
   .page-main__facts h2 {
@@ -522,7 +523,7 @@ a {
 }
 
 .page-main__bike-types {
-  background-color: #F6F7F9;
+  background-color: #f6f7f9;
   margin-top: 150px;
   padding: 149px 0 94px;
   overflow: hidden;
@@ -546,7 +547,7 @@ a {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 @media (max-width: 1023px) {
   .page-main__bike-types h2 {
@@ -726,7 +727,7 @@ a {
 .page-main__video h2 {
   text-align: center;
   margin: 0;
-  color: #FFF;
+  color: #ffffff;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -741,7 +742,7 @@ a {
   width: 340px;
   text-align: center;
   margin: 20px auto 0;
-  color: #FFF;
+  color: #ffffff;
   opacity: 0.7;
   font-weight: 300;
   font-size: 16px;
@@ -793,7 +794,7 @@ a {
   width: 65px;
   height: 65px;
   cursor: pointer;
-  fill: #0AD9C6;
+  fill: #0ad9c6;
 }
 @media (max-width: 1023px) {
   .page-main__video-play-button {
@@ -836,7 +837,7 @@ a {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 @media (max-width: 1023px) {
   .page-footer__promo h2 {
@@ -904,6 +905,7 @@ a {
     margin-top: 20px;
   }
 }
+
 .page-footer__contacts-list {
   list-style: none;
   display: flex;
