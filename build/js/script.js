@@ -23,3 +23,13 @@ menuItem.addEventListener('click', function () {
   pageHeaderNav.classList.remove('page-header__navigation--opened');
 });
 
+var phoneInput = document.querySelector('#phone');
+phoneInput.addEventListener('input', function () {
+  var regex = /\d+/g;
+  if (!regex.test(phoneInput.value)) {
+    phoneInput.setCustomValidity('Только цифры');
+  } else {
+    phoneInput.setCustomValidity('');
+  }
+  phoneInput.reportValidity();
+});
