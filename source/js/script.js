@@ -17,11 +17,14 @@ headerToggle.addEventListener('click', function () {
 });
 
 // Закрытие мобильного меню после выбора любого пункта
-var menuItem = document.querySelector('.page-header__navigation-item');
-menuItem.addEventListener('click', function () {
-  pageHeaderNav.classList.add('page-header__navigation--closed');
-  pageHeaderNav.classList.remove('page-header__navigation--opened');
-});
+var menuItem = document.querySelectorAll('.page-header__navigation-item');
+
+for (var i = 0; i < menuItem.length; i++) {
+  menuItem[i].addEventListener('click', function () {
+    pageHeaderNav.classList.add('page-header__navigation--closed');
+    pageHeaderNav.classList.remove('page-header__navigation--opened');
+  });
+}
 
 var phoneInput = document.querySelector('#phone');
 phoneInput.addEventListener('input', function () {
