@@ -2,7 +2,7 @@
   position: relative;
   height: 825px;
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     height: 340px;
   }
 }
@@ -19,13 +19,13 @@
     width: 320px;
   }
 
-  @media(max-width:$mobile-width){
-    width: 100%
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 }
 
 .page-header__navigation.page-header__navigation--nojs {
-  @media(max-width:$tablet-width){
+  @media (max-width: $tablet-width) {
     position: relative;
   }
 }
@@ -51,21 +51,22 @@
     background-color: $main-white;
 
     li:first-child {
-        margin-top: 117px;
+      margin-top: 117px;
     }
+
     li:last-child {
-        margin-bottom: 138px;
+      margin-bottom: 138px;
     }
   }
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 1px;
     width: 100%;
     border-bottom: 1px solid $navigation-underline;
 
-    @media (max-width:$tablet-width) {
+    @media (max-width: $tablet-width) {
       display: none;
     }
   }
@@ -76,7 +77,7 @@
   font-size: 16px;
   line-height: 32px;
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
 
     margin-top: 30px;
     height: 60px;
@@ -90,7 +91,7 @@
   text-decoration: none;
   color: $navigation-text;
 
-  @media(max-width:$tablet-width){
+  @media (max-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +103,7 @@
 
 .page-header__navigation-item .page-header__navigation-item-arrow {
   @media (min-width: $tablet-width) {
-      display: none;
+    display: none;
   }
 }
 
@@ -114,7 +115,7 @@
   top: 0;
 
   @media (min-width: $tablet-width) {
-      display: none;
+    display: none;
   }
 }
 
@@ -125,7 +126,7 @@
 
 @media (max-width: $tablet-width) {
   .page-header__navigation--closed .page-header__navigation-item {
-      display: none;
+    display: none;
   }
 }
 
@@ -141,28 +142,27 @@
   position: relative;
   width: 100%;
   height: 825px;
-  background-color: $js-navigation-text;
-  background: center / cover url('../img/header-background-desktop@1x.jpg');
+  background: $js-navigation-text center / cover url("../img/header-background-desktop@1x.jpg");
 
   @media (min-resolution: 192dpi) {
-    background: center / cover url('../img/header-background-desktop@2x.jpg');
+    background: center / cover url("../img/header-background-desktop@2x.jpg");
   }
 
-  @media(max-width:$tablet-width){
+  @media (max-width: $tablet-width) {
     height: 340px;
-    background: center / cover url('../img/header-background-tablet@1x.jpg');
+    background: center / cover url("../img/header-background-tablet@1x.jpg");
 
     @media (min-resolution: 192dpi) {
-      background: center / cover url('../img/header-background-tablet@2x.jpg');
+      background: center / cover url("../img/header-background-tablet@2x.jpg");
     }
   }
 
-  @media(max-width:$mobile-width){
+  @media (max-width: $mobile-width) {
     height: 390px;
-    background: center / cover url('../img/header-background-mobile@1x.jpg');
+    background: center / cover url("../img/header-background-mobile@1x.jpg");
 
     @media (min-resolution: 192dpi) {
-      background: center / cover url('../img/header-background-mobile@2x.jpg');
+      background: center / cover url("../img/header-background-mobile@2x.jpg");
     }
   }
 }
@@ -181,9 +181,9 @@
   left: 19.5%;
   width: 68px;
   height: 21px;
-  // fill: $main-green;
 
-  @media(max-width:$tablet-width){
+
+  @media (max-width: $tablet-width) {
     position: absolute;
     top: 25px;
     left: 21px;
@@ -209,7 +209,7 @@
     margin: 0;
   }
 
-  @media(max-width:$mobile-width) {
+  @media (max-width: $mobile-width) {
     top: 120px;
     width: 95%;
   }
@@ -222,7 +222,7 @@
   line-height: 64px;
   letter-spacing: 0.035em;
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     font-size: 30px;
     line-height: 42px;
     text-align: center;
@@ -237,7 +237,7 @@
   opacity: 0.8;
   letter-spacing: -0.005em;
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     margin: 20px auto 0;
     font-size: 18px;
     line-height: 32px;
@@ -260,10 +260,6 @@
     margin-top: 70px;
     max-width: 321px;
     min-width: 288px;
-  }
-
-  @media (max-width: $mobile-width) {
-
   }
 }
 
@@ -309,7 +305,8 @@
     color: $placeholder-text;
   }
 
-  &:hover, :focus {
+  &:hover,
+  :focus {
     border-color: $main-red;
   }
 
