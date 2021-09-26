@@ -66,9 +66,9 @@
       </article>
       <form class="page-header__form" method="POST" action="https://echo.htmlacademy.ru">
         <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
-        <label class="visually-hidden" for="name"></label>
+        <label for="name"></label>
         <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
-        <label class="visually-hidden" for="phone"></label>
+        <label for="phone"></label>
         <input type="text" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required>
         <button type="submit" aria-label="Кнопка отправки контактов">Подобрать велосипед мечты</button>
       </form>
@@ -115,6 +115,8 @@
           <div class="page-main__type-image-container page-main__type-image-container--1">
             <picture>
               <source type="image/webp" media="(max-width: 1023px)" srcset="./img/roadster-tablet@1x.webp 1x, ./img/roadster-tablet@2x.webp 2x">
+              <!-- 1x: 270x300 ; 2x: 540x600 -->
+              <source type="image/jpeg" media="(max-width: 1023px)" srcset="./img/roadster-tablet@1x.jpg 1x, ./img/roadster-tablet@2x.jpg 2x">
               <source type="image/webp" srcset="./img/roadster-desktop@1x.webp 1x, ./img/roadster-desktop@2x.webp 2x">
               <!-- 1x: 342x503 ; 2x: 684x1006 -->
               <img src="img/roadster-desktop@1x.jpg" srcset="img/roadster-desktop2x.jpg 2x" width="342" height="503" alt="Дорожный велосипед на фоне стены с плющом">
@@ -132,6 +134,8 @@
           <div class="page-main__type-image-container page-main__type-image-container--2">
             <picture>
               <source type="image/webp" media="(max-width: 1023px)" srcset="./img/mountainbike-tablet@1x.webp 1x, ./img/mountainbike-tablet@2x.webp 2x">
+              <!-- 1x: 270x300 ; 2x: 540x600 -->
+              <source type="image/jpeg" media="(max-width: 1023px)" srcset="./img/mountainbike-tablet@1x.jpg 1x, ./img/mountainbike-tablet@2x.jpg 2x">
               <source type="image/webp" srcset="./img/mountainbike-desktop@1x.webp 1x, ./img/mountainbike-desktop@2x.webp 2x">
               <!-- 1x: 342x566; 2x: 684x1112 -->
               <img src="img/mountainbike-desktop@1x.jpg" srcset="img/mountainbike-desktop@2x.jpg 2x" width="342" height="566" alt="Велосипед в горах на фоне восхода">
@@ -147,6 +151,8 @@
           <div class="page-main__type-image-container page-main__type-image-container--3">
             <picture>
               <source type="image/webp" media="(max-width: 1023px)" srcset="./img/kidsbike-tablet@1x.webp 1x, ./img/kidsbike-tablet@2x.webp 2x">
+              <!-- 1x: 270x300 ; 2x: 540x600 -->
+              <source type="image/jpeg" media="(max-width: 1023px)" srcset="./img/kidsbike-tablet@1x.jpg 1x, ./img/kidsbike-tablet@2x.jpg 2x">
               <source type="image/webp" srcset="./img/kidsbike-desktop@1x.webp 1x, ./img/kidsbike-desktop@2x.webp 2x">
               <!-- 1x: 342x513; 2x: 684x1026; -->
               <img src="img/kidsbike-desktop@1x.jpg" srcset="img/kidsbike-desktop@2x.jpg 2x" width="342" height="513" alt="Детский велосипед у подъезда">
