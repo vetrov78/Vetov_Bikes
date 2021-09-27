@@ -223,7 +223,7 @@
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.04em;
 
   @media (max-width: $tablet-width) {
     font-size: 30px;
@@ -238,7 +238,7 @@
   font-size: 20px;
   line-height: 32px;
   opacity: 0.8;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
 
   @media (max-width: $tablet-width) {
     margin: 20px auto 0;
@@ -264,6 +264,10 @@
     max-width: 321px;
     min-width: 288px;
   }
+}
+
+.page-header__form label {
+  display: none;
 }
 
 .page-header__form h2 {
