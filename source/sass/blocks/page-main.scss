@@ -320,39 +320,38 @@
 
   @media (max-width: $tablet-width) {
     top: 216px;
-    width: 503px;
-    height: 282px;
+    max-width: 503px;
+    height: auto;
   }
 
   @media (max-width: $mobile-width) {
-    top: 271px;
-    width: 288px;
-    height: 162px;
+    top: 70%;
+    width: 90%;
   }
 }
 
 .page-main__video-container img {
+  display: block;
   height: auto;
 }
 
 .page-main__video-play-button {
   position: absolute;
-  top: 229px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
   width: 65px;
   height: 65px;
   cursor: pointer;
   fill: $main-green;
 
   @media (max-width: $tablet-width) {
-    top: 96px;
+    // top: 96px;
     width: 91px;
     height: 91px;
   }
 
   @media (max-width: $mobile-width) {
-    top: 48px;
     width: 65px;
     height: 65px;
   }
