@@ -102,20 +102,23 @@
 }
 
 .page-header__navigation-item .page-header__navigation-item-arrow {
-  @media (min-width: $tablet-width) {
-    display: none;
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
   }
 }
 
 .page-header__navigation-toggle {
-  z-index: 2;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  top: 0;
+  display: none;
 
-  @media (min-width: $tablet-width) {
-    display: none;
+  @media (max-width: $tablet-width) {
+    display: block;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
@@ -242,6 +245,10 @@
     font-size: 18px;
     line-height: 32px;
     text-align: center;
+  }
+
+  @media (max-width:$mobile-width) {
+    padding: 0 15px;
   }
 }
 
