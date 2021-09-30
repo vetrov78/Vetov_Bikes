@@ -29,9 +29,9 @@
 
   var phoneInput = document.querySelector('#phone');
   phoneInput.addEventListener('input', function () {
-    var regex = /^\d+$/;
+    var regex = /^[\d ()+-]+$/;
     if (!regex.test(phoneInput.value)) {
-      phoneInput.setCustomValidity('Только цифры');
+      phoneInput.setCustomValidity('Разрешены цифры и символы ()+-');
     } else {
       phoneInput.setCustomValidity('');
     }
