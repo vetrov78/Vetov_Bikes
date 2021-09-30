@@ -378,8 +378,8 @@ a {
   border: 1px solid #c9ccd4;
   border-radius: 6px;
   width: 100%;
-  margin-top: 23px;
-  padding: 16px 29px 13px;
+  margin-top: 20px;
+  padding: 12px 29px 10px;
   box-sizing: border-box;
   font-size: 15px;
   line-height: 24px;
@@ -410,7 +410,7 @@ a {
 .page-header__form button {
   width: 100%;
   margin-top: 20px;
-  padding: 14px 29px 10px;
+  padding: 17px 29px 13px;
   box-sizing: border-box;
   background-color: #0ad9c6;
   border-radius: 6px;
