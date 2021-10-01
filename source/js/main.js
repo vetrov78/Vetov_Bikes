@@ -8,7 +8,9 @@
   pageHeaderNav.classList.remove('page-header__navigation--opened');
 
   headerToggle.addEventListener('click', function () {
-    document.body.classList.toggle('lock-scroll');
+    if (document.body.clientWidth < 767) {
+      document.body.classList.toggle('lock-scroll');
+    }
     if (pageHeaderNav.classList.contains('page-header__navigation--closed')) {
       pageHeaderNav.classList.remove('page-header__navigation--closed');
       pageHeaderNav.classList.add('page-header__navigation--opened');
