@@ -74,7 +74,7 @@
 }
 
 .page-footer__contacts {
-  margin: 38px 0 55px;
+  margin: 18px 0 55px;
 
   @media (max-width: $tablet-width) {
     margin-top: 20px;
@@ -84,8 +84,8 @@
 .page-footer__contacts-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  width: 550px;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
   padding: 0 10px 0 0;
 
@@ -102,6 +102,8 @@
 .page-footer__contacts-item {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  padding: 0 45px;
 }
 
 .page-footer__contacts-item a {

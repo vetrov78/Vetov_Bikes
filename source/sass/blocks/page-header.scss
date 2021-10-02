@@ -33,11 +33,11 @@
   position: relative;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
-  padding: 21px 20px 9px;
+  padding: 21px 20% 9px;
   box-sizing: border-box;
-  max-width: 873px;
 
   @media (max-width: $tablet-width) {
     margin: 0;
@@ -58,7 +58,7 @@
     position: absolute;
     content: "";
     bottom: 1px;
-    width: 100%;
+    width: 60%;
     border-bottom: 1px solid $navigation-underline;
 
     @media (max-width: $tablet-width) {
@@ -71,10 +71,11 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
+  padding: 0 22px;
 
   @media (max-width: $tablet-width) {
-
     margin-top: 30px;
+    padding: 0;
     height: 60px;
     background-color: $js-navigation-background;
     font-size: 20px;
@@ -96,7 +97,7 @@
   }
 
   &:hover {
-    color: $main-white;
+    opacity: 0.7;
   }
 }
 
