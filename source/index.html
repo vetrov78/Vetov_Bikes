@@ -167,9 +167,11 @@
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="page-main__video-container">
         <img src="./img/video_background.jpg" width="929" height="522" alt="Видео о велосипедах">
-        <svg class="page-main__video-play-button" width="65" height="65">
-          <use xlink:href="./img/sprite.svg#play_button"></use>
-        </svg>
+        <a class="page-main__video-play-button" href="#">
+          <svg width="65" height="65">
+            <use xlink:href="./img/sprite.svg#play_button"></use>
+          </svg>
+        </a>
       </div>
     </section>
   </main>
@@ -191,7 +193,7 @@
       <ul class="page-footer__contacts-list">
         <li class="page-footer__contacts-item">
           <a href="mailto:puteshestviemechta@gmail.ru">
-            <svg width="26" height="20" xmlns="http://www.w3.org/2000/svg">
+            <svg class="page-footer__contacts-icon page-footer__contacts-icon--mail" width="26" height="20" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite.svg#mail"></use>
             </svg>
             <span>puteshestviemechta@gmail.ru</span>
@@ -199,7 +201,7 @@
         </li>
         <li class="page-footer__contacts-item">
           <a href="tel:+7499-784-684-46">
-            <svg width="22" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="page-footer__contacts-icon" width="22" height="24" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite.svg#phone"></use>
             </svg>
             <span>+7 (499) -784-684-46</span>

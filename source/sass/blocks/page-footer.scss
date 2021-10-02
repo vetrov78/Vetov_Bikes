@@ -113,4 +113,21 @@
   font-size: 16px;
   line-height: 22px;
   color: $contacts-text;
+
+  &:hover {
+    color: $main-black;
+
+    & svg {
+      opacity: 0.7;
+    }
+  }
+}
+
+.page-footer__contacts-icon {
+  stroke: $main-green;
+  fill: none;
+
+  &--mail {
+    fill: $main-green;
+  }
 }

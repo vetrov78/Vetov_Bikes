@@ -1,6 +1,5 @@
 .page-header {
   position: relative;
-  height: 825px;
 }
 
 .page-header__navigation {
@@ -94,6 +93,10 @@
     padding: 17px 35px 17px 16px;
     box-sizing: border-box;
     color: $js-navigation-text;
+  }
+
+  &:hover {
+    color: $main-white;
   }
 }
 
@@ -243,7 +246,7 @@
     text-align: center;
   }
 
-  @media (max-width:$mobile-width) {
+  @media (max-width: $mobile-width) {
     padding: 0 15px;
   }
 }

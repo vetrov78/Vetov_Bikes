@@ -76,7 +76,6 @@ a {
 
 .page-header {
   position: relative;
-  height: 825px;
 }
 
 .page-header__navigation {
@@ -173,6 +172,9 @@ a {
     box-sizing: border-box;
     color: #48494d;
   }
+}
+.page-header__navigation-item a:hover {
+  color: #ffffff;
 }
 
 .page-header__navigation-item .page-header__navigation-item-arrow {
@@ -798,6 +800,23 @@ a {
   height: auto;
 }
 
+.page-main__video-play-button svg {
+  cursor: pointer;
+  fill: #0ad9c6;
+}
+@media (max-width: 1023px) {
+  .page-main__video-play-button svg {
+    width: 91px;
+    height: 91px;
+  }
+}
+@media (max-width: 767px) {
+  .page-main__video-play-button svg {
+    width: 65px;
+    height: 65px;
+  }
+}
+
 .page-main__video-play-button {
   position: absolute;
   top: 50%;
@@ -805,23 +824,12 @@ a {
   transform: translate(-50%, -50%);
   width: 65px;
   height: 65px;
-  cursor: pointer;
-  fill: #0ad9c6;
-}
-@media (max-width: 1023px) {
-  .page-main__video-play-button {
-    width: 91px;
-    height: 91px;
-  }
-}
-@media (max-width: 767px) {
-  .page-main__video-play-button {
-    width: 65px;
-    height: 65px;
-  }
 }
 .page-main__video-play-button:hover {
   fill-opacity: 0.5;
+}
+.page-main__video-play-button:focus {
+  outline: 1px solid yellow;
 }
 
 .page-footer {
@@ -949,4 +957,18 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.5);
+}
+.page-footer__contacts-item a:hover {
+  color: #000000;
+}
+.page-footer__contacts-item a:hover svg {
+  opacity: 0.7;
+}
+
+.page-footer__contacts-icon {
+  stroke: #0ad9c6;
+  fill: none;
+}
+.page-footer__contacts-icon--mail {
+  fill: #0ad9c6;
 }
