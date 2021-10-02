@@ -574,15 +574,19 @@ a {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 3.5%;
   justify-content: center;
   margin: 51px 3.5% 0;
+}
+.page-main__types-list > * + * {
+  margin-left: 3.5%;
 }
 @media (max-width: 1023px) {
   .page-main__types-list {
     flex-wrap: wrap;
-    gap: 7%;
     margin-top: 30px;
+  }
+  .page-main__types-list > * + * {
+    margin-left: 7%;
   }
 }
 @media (max-width: 767px) {

@@ -120,14 +120,20 @@
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 3.5%;
   justify-content: center;
   margin: 51px 3.5% 0;
 
+  & > * + * {
+    margin-left: 3.5%;
+  }
+
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
-    gap: 7%;
     margin-top: 30px;
+
+    & > * + * {
+      margin-left: 7%;
+    }
   }
 
   @media (max-width: $mobile-width) {
