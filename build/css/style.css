@@ -349,8 +349,8 @@ a {
   position: absolute;
   top: 322px;
   left: 58%;
-  max-width: 327px;
-  width: auto;
+  width: 23%;
+  min-width: 327px;
   text-align: center;
 }
 @media (max-width: 1023px) {
@@ -359,6 +359,12 @@ a {
     left: 50%;
     transform: translate(-50%);
     margin-top: 70px;
+    width: 42%;
+    min-width: 321px;
+  }
+}
+@media (max-width: 767px) {
+  .page-header__form {
     width: 90%;
     min-width: 288px;
   }
