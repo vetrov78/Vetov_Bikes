@@ -125,6 +125,9 @@ a {
     flex-wrap: nowrap;
     background-color: #ffffff;
   }
+  .page-header__navigation-list > * + * {
+    margin: 0;
+  }
   .page-header__navigation-list li:first-child {
     margin-top: 117px;
   }

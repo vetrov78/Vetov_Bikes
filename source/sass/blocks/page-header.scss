@@ -48,6 +48,10 @@
     flex-wrap: nowrap;
     background-color: $main-white;
 
+    & > * + * {
+      margin: 0;
+    }
+
     li:first-child {
       margin-top: 117px;
     }
