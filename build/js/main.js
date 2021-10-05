@@ -8,6 +8,7 @@
   pageHeaderNav.classList.remove('page-header__navigation--nojs');
   pageHeaderNav.classList.add('page-header__navigation--closed');
   pageHeaderNav.classList.remove('page-header__navigation--opened');
+  pageHeaderNav.style.height = '100%';
 
   headerToggle.addEventListener('click', function () {
     if (document.body.clientWidth < 1023) {
