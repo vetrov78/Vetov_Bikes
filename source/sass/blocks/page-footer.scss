@@ -104,6 +104,10 @@
   align-items: center;
   margin-top: 20px;
   padding: 0 45px;
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
 }
 
 .page-footer__contacts-item a {
