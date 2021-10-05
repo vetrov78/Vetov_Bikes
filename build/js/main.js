@@ -10,7 +10,7 @@
   pageHeaderNav.classList.remove('page-header__navigation--opened');
 
   headerToggle.addEventListener('click', function () {
-    if (document.body.clientWidth < 767) {
+    if (document.body.clientWidth < 1023) {
       document.body.classList.toggle('lock-scroll');
       pageHeader.style.height = pageHeader.style.height === '100vh' ? '' : '100vh';
       pageHeaderNavList.style.height = pageHeaderNavList.style.height === '100%' ? '' : '100%';
@@ -29,7 +29,7 @@
 
   for (var i = 0; i < menuItem.length; i++) {
     menuItem[i].addEventListener('click', function () {
-      if (document.body.clientWidth < 767) {
+      if (document.body.clientWidth < 1023) {
         document.body.classList.toggle('lock-scroll');
         pageHeader.style.height = pageHeader.style.height === '100vh' ? '' : '100vh';
         pageHeaderNavList.style.height = pageHeaderNavList.style.height === '100%' ? '' : '100%';
