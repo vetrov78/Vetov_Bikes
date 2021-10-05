@@ -182,11 +182,13 @@
     </div>
     <div class="page-footer__map">
       <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+        <!-- 1x: 319x250; 2x: 638x500 -->
+        <source type="image/jpeg" media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
         <source type="image/webp" srcset="./img/map@1x.webp 1x, ./img/map@2x.webp 2x">
-        <!-- 1x: 957x530; 2x: 1914x1060 -->
+        <!-- 1x: 698x545; 2x: 1396x1090 -->
         <img src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" width="957" height="530" alt="Карта с местом расположения фирмы">
       </picture>
-
     </div>
     <div class="page-footer__contacts">
       <h2 class="page-footer__item-title visually-hidden">Контакты</h2>
@@ -210,6 +212,6 @@
       </ul>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
