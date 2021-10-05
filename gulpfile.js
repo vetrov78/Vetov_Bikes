@@ -14,6 +14,7 @@ const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const { dest } = require("gulp");
+const critical = require('critical').stream;
 
 //Sprite
 const sprite = () => {
@@ -146,9 +147,27 @@ const build = gulp
   );
 exports.build = build;
 
+const criticalTask = () => {
+  return gulp
+    .src('build/*.html')
+    .pipe(
+      critical({
+        base: 'build/',
+        inline: true,
+        css: ['build/css/style.min.css'],
+      })
+    )
+    .on('error', err => {
+      log.error(err.message);
+    })
+    .pipe(gulp.dest('build'));
+};
+exports.critical = criticalTask;
+
 exports.default = gulp
 .series(
   build,
+  criticalTask,
   server,
   watcher
 );
