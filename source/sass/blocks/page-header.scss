@@ -31,9 +31,10 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-evenly;
+  width: 873px;
   margin: auto;
-  padding: 21px 20% 9px;
+  padding: 21px 0 9px;
   box-sizing: border-box;
 
   & > * + * {
@@ -41,12 +42,14 @@
   }
 
   @media (max-width: $tablet-width) {
+    width: auto;
     margin: 0;
     padding: 0;
     flex-direction: column;
     justify-content: start;
     flex-wrap: nowrap;
     background-color: $main-white;
+    overflow: scroll;
 
     & > * + * {
       margin: 0;
@@ -65,7 +68,7 @@
     position: absolute;
     content: "";
     bottom: 1px;
-    width: 60%;
+    width: 873px;
     border-bottom: 1px solid $navigation-underline;
 
     @media (max-width: $tablet-width) {
